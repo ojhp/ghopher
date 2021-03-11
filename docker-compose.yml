@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  ghopher:
+    build: .
+    environment:
+      GHOPHER_API_ROOT: ${GHOPHER_API_ROOT}
+      GHOPHER_API_KEY: ${GHOPHER_API_KEY}
+      GHOPHER_HOST: localhost
+    ports:
+      - 70:70
